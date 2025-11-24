@@ -1,11 +1,15 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-const page = () => {
+const Page = () => {
+  const router = useRouter();
+
   const handleLogin = () => {
     // 여기에 구글 로그인 로직 추가
     console.log("Google 로그인 시도");
+    router.push("/");
   };
   return (
     <div className="h-full flex flex-col items-center justify-center gap-6 px-4">
@@ -42,4 +46,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Page;

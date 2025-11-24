@@ -1,5 +1,10 @@
-import { redirect } from "next/navigation";
+import UserLayout from "./(user)/layout";
+import UserPage from "./(user)/page";
 
 export default function Home() {
-  redirect("/login");
+  return (
+    <UserLayout>
+      <UserPage />
+    </UserLayout>
+  );
 }
