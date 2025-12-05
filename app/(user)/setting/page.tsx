@@ -33,7 +33,7 @@ const Page = () => {
         {/* 버튼 영역 */}
         <div className="flex justify-between mt-6">
           <button className="text-red-500 font-semibold">로그아웃</button>
-          <button className="text-[#5C4B1B] font-semibold">회원탈퇴</button>
+          <button className="text-[#5C4B1B] font-medium">회원탈퇴</button>
         </div>
       </div>
 
